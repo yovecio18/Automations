@@ -60,6 +60,7 @@ sudo apt install -y bloodyad
 sudo apt install -y enum4linux-ng
 sudo apt install -y certipy-ad
 sudo apt install -y coercer
+sudo apt install -y obsidian
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
