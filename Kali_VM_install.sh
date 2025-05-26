@@ -57,6 +57,11 @@ rm /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz
 
 echo "Fetching Kerbrute"
 cd /home/user/Downloads/Tools
+wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.1/pspy64
+chmod +x ./pspy64
+
+echo "Fetching Pspy"
+cd /home/user/Downloads/Tools
 wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
 chmod +x ./kerbrute_linux_amd64
 
