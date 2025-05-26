@@ -55,6 +55,11 @@ wget https://github.com/codemerx/CodemerxDecompile/releases/latest/download/Code
 tar -xzf /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz
 rm /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz
 
+echo "Fetching Kerbrute"
+cd /home/user/Downloads/Tools
+wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
+chmod +x ./kerbrute_linux_amd64
+
 echo "Installing extra tools"
 sudo apt install -y bloodyad
 sudo apt install -y enum4linux-ng
@@ -81,4 +86,4 @@ git clone https://github.com/Mayyhem/SharpSCCM
 git clone https://github.com/pwntester/ysoserial.net 
 git clone https://github.com/Flangvik/SharpCollection
 git clone https://github.com/dirkjanm/adidnsdump
-wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
+git clone https://github.com/insidetrust/statistically-likely-usernames
