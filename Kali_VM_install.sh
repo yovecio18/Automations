@@ -80,3 +80,4 @@ git clone https://github.com/AlessandroZ/LaZagne
 git clone https://github.com/Mayyhem/SharpSCCM 
 git clone https://github.com/pwntester/ysoserial.net 
 git clone https://github.com/Flangvik/SharpCollection
+git clone https://github.com/dirkjanm/adidnsdump
