@@ -65,7 +65,6 @@ cd /home/user/Downloads/Tools
 wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
 chmod +x ./kerbrute_linux_amd64
 
-
 echo "Fetching Ligolong"
 mkdir  /home/user/Downloads/Tools/LigoloNG
 cd /home/user/Downloads/Tools/LigoloNG
@@ -81,6 +80,12 @@ tar xfv ligolo-ng_agent_0.8.2_linux_amd64.tar.gz
 rm LICENSE README.md
 tar xfv ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
 rm LICENSE README.md ligolo-ng_agent_0.8.2_linux_amd64.tar.gz ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
+
+echo "Fetching Bloodhound-CE"
+cd /home/user/Downloads/Tools
+wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
+tar -xvzf bloodhound-cli-linux-amd64.tar.gz
+rm bloodhound-cli-linux-amd64.tar.gz
 
 echo "Installing extra tools"
 sudo apt install -y bloodyad
