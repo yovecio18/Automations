@@ -94,6 +94,7 @@ sudo apt install -y certipy-ad
 sudo apt install -y coercer
 sudo apt install -y obsidian
 sudo apt install -y bloodhound
+sudo apt install -y msitools
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
