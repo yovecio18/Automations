@@ -8,6 +8,9 @@ Add-MpPreference -ExclusionPath C:\Exclusion\
 echo "Setting Swedish time zone"
 Set-TimeZone -Id "Central Europe Standard Time"
 
+echo "Unhiding extension for known file types setting"
+Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\' -Name HideFileExt -Value 0 -Force
+
 echo "Intalling Spice Agent"
 cd C:\Exclusion\Tools
 wget https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.271-1/virtio-win-guest-tools.exe -outfile virtio-win-guest-tools.exe
