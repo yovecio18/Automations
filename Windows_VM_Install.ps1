@@ -23,3 +23,8 @@ Set-ExecutionPolicy Bypass -Force
 powershell.exe ./Get.ps1
 Set-ExecutionPolicy Restricted -Force
 
+echo "Fetching YET Obfuscator tool"
+cd C:\Exclusion\Tools
+wget https://github.com/0xb11a1/yetAnotherObfuscator/releases/download/1.1/yetAnotherObfuscator_v1.1.zip -OutFile yetAnotherObfuscator_v1.1.zip
+Expand-Archive -Path .\yetAnotherObfuscator_v1.1.zip -DestinationPath .\YetAnotherObfuscator
+rm yetAnotherObfuscator_v1.1.zip
