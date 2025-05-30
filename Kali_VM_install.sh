@@ -98,6 +98,7 @@ sudo apt install -y gir1.2-libmsi-1.0 libmsi-1.0-0 libmsi-dev msitools wixl wixl
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
+git clone https://github.com/unode/firefox_decrypt.git
 git clone https://github.com/bee-san/RustScan 
 git clone https://github.com/g0h4n/RustHound-CE 
 git clone https://github.com/aniqfakhrul/powerview.py 
