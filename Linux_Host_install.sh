@@ -69,6 +69,11 @@ cd gnome-terminal
 chmod +x ./install.sh
 ./install.sh
 
+echo "Installing LUKS tools"
+#Reference: https://funzt.info/posts/debian-using-yubikey-to-unlock-luks-encrypted-disks/
+sudo apt install -y yubikey-personalization yubikey-luks
+
+
 #echo "Installing Debian's Nvidia and Hashcat"
 #sudo apt install -y nvidia-driver nvdia-smi nvidia-cuda-toolkit hashcat
 echo "Installing Ubuntu's Nvidia and Hashcat"
