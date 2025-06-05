@@ -59,7 +59,7 @@ sudo ufw default deny incoming
 
 #echo "Installing Debian's Nvidia and Hashcat"
 #sudo apt install -y nvidia-driver nvdia-smi nvidia-cuda-toolkit hashcat
-#echo "Installing Ubuntu's Nvidia and Hashcat"
+echo "Installing Ubuntu's Nvidia and Hashcat"
 sudo apt install -y ubuntu-drivers-common hashcat
 sudo ubuntu-drivers install
 echo "Signing Nvidia drivers via MOK"
