@@ -18,8 +18,8 @@
                                          
 BANNER
 
-echo "Adding non-free and contrib repositories"
-echo "deb http://deb.debian.org/debian/ bookworm main non-free-firmware non-free contrib\ndeb-src http://deb.debian.org/debian/ bookworm main non-free-firmware non-free contrib\ndeb http://security.debian.org/debian-security bookworm-security main non-free-firmware non-free contrib\ndeb-src http://security.debian.org/debian-security bookworm-security main non-free-firmware non-free contrib\ndeb http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib\ndeb-src http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib\n" > /etc/apt/sources.list
+#echo "Adding Debian's non-free and contrib repositories"
+#echo "deb http://deb.debian.org/debian/ bookworm main non-free-firmware non-free contrib\ndeb-src http://deb.debian.org/debian/ bookworm main non-free-firmware non-free contrib\ndeb http://security.debian.org/debian-security bookworm-security main non-free-firmware non-free contrib\ndeb-src http://security.debian.org/debian-security bookworm-security main non-free-firmware non-free contrib\ndeb http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib\ndeb-src http://deb.debian.org/debian/ bookworm-updates main non-free-firmware contrib\n" > /etc/apt/sources.list
 
 echo "Disabling Ipv6"
 echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
@@ -41,23 +41,26 @@ sudo ufw enable
 sudo ufw allow Office
 sudo ufw default allow outgoing
 sudo ufw default deny incoming
-echo "Istalling Spice agent"
-sudo apt install -y spice-vdagent
-sudo systemctl start spice-vdagent
-sudo systemctl enable spice-vdagent
+#echo "Istalling Spice agent"
+#sudo apt install -y spice-vdagent
+#sudo systemctl start spice-vdagent
+#sudo systemctl enable spice-vdagent
 
-echo "Installing KVM"
-sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin
-echo "Adding user permission to run kvm"
-sudo adduser user libvirt
-sudo adduser user kvm
-echo "Installing VM Manager"
-sudo apt install -y virt-manager
-echo "Autostaring KVM networks"
-sudo virsh net-autostart default
-sudo virsh net-start default
+#echo "Installing KVM"
+#sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin
+#echo "Adding user permission to run kvm"
+#sudo adduser user libvirt
+#sudo adduser user kvm
+#echo "Installing VM Manager"
+#sudo apt install -y virt-manager
+#echo "Autostaring KVM networks"
+#sudo virsh net-autostart default
+#sudo virsh net-start default
 
-echo "Installing Nvidia and Hashcat"
-sudo apt install -y nvidia-driver nvdia-smi nvidia-cuda-toolkit hashcat
+#echo "Installing Debian's Nvidia and Hashcat"
+#sudo apt install -y nvidia-driver nvdia-smi nvidia-cuda-toolkit hashcat
+#echo "Installing Ubuntu's Nvidia and Hashcat"
+sudo apt install -y ubuntu-drivers-common hashcat
+sudo ubuntu-drivers install
 echo "Signing Nvidia drivers via MOK"
 sudo mokutil --import /var/lib/dkms/mok.pub 
