@@ -41,6 +41,8 @@ sudo ufw enable
 sudo ufw allow Office
 sudo ufw default allow outgoing
 sudo ufw default deny incoming
+echo "Installing Gparted"
+sudo apt install -y gparted
 #echo "Istalling Spice agent"
 #sudo apt install -y spice-vdagent
 #sudo systemctl start spice-vdagent
