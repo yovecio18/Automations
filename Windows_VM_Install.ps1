@@ -35,9 +35,9 @@ Set-ExecutionPolicy Bypass -Force
 Set-ExecutionPolicy Restricted -Force
 
 echo "Installing extra packages"
-choco install 7zip.install
-choco install vscode
-choco install python
-choco install notepadplusplus
-choco install git.install
-choco install visualstudio2022community
+choco install 7zip.install -y
+choco install vscode -y
+choco install python -y
+choco install notepadplusplus -y
+choco install git.install -y
+choco install visualstudio2022community -y
