@@ -60,7 +60,7 @@ sudo apt install -y gparted
 #sudo virsh net-start default
 
 echo "Installing terminal theming"
-sudo apt install -y dconf-cli zsh-syntax-highlighting
+sudo apt install -y dconf-cli zsh-syntax-highlighting git
 cd /home/user/
 mkdir Installers
 cd Installers/
