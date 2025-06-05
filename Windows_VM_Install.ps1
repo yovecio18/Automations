@@ -40,4 +40,4 @@ choco install vscode -y
 choco install python -y
 choco install notepadplusplus -y
 choco install git.install -y
-choco install visualstudio2022community -y
+choco install visualstudio2022community "'--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended'" -y
