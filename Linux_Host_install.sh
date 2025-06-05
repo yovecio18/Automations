@@ -59,6 +59,16 @@ sudo apt install -y gparted
 #sudo virsh net-autostart default
 #sudo virsh net-start default
 
+echo "Installing terminal theming"
+sudo apt install -y dconf-cli zsh-syntax-highlighting
+cd /home/user/
+mkdir Installers
+cd Installers/
+git clone https://github.com/dracula/gnome-terminal
+cd gnome-terminal
+chmod +x ./install.sh
+./install.sh
+
 #echo "Installing Debian's Nvidia and Hashcat"
 #sudo apt install -y nvidia-driver nvdia-smi nvidia-cuda-toolkit hashcat
 echo "Installing Ubuntu's Nvidia and Hashcat"
