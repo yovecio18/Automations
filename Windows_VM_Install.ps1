@@ -28,3 +28,16 @@ cd C:\Exclusion\Tools
 wget https://github.com/0xb11a1/yetAnotherObfuscator/releases/download/1.1/yetAnotherObfuscator_v1.1.zip -OutFile yetAnotherObfuscator_v1.1.zip
 Expand-Archive -Path .\yetAnotherObfuscator_v1.1.zip -DestinationPath .\YetAnotherObfuscator
 rm yetAnotherObfuscator_v1.1.zip
+
+echo "Installing chocolatey package manager"
+Set-ExecutionPolicy Bypass -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Restricted -Force
+
+echo "Installing extra packages"
+choco install 7zip.install
+choco install vscode
+choco install python
+choco install notepadplusplus
+choco install git.install
+choco install visualstudio2022community
