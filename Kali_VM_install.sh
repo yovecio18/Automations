@@ -46,6 +46,7 @@ sudo apt install -y kali-tools-information-gathering kali-tools-vulnerability ka
 
 echo "Installing cargo & cargodeb"
 sudo apt install -y rustup
+rustup default stable
 cargo install cargo-deb
 
 echo "Fetching Codemerx decompile"
