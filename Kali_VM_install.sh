@@ -50,10 +50,10 @@ rustup default stable
 cargo install cargo-deb
 
 echo "Fetching Codemerx decompile"
-mkdir /home/user/Downloads/Tools
-cd /home/user/Downloads/Tools
+mkdir /home/user/Downloads/Tools/CodemerxDecompile
+cd /home/user/Downloads/Tools/
 wget https://github.com/codemerx/CodemerxDecompile/releases/latest/download/CodemerxDecompile-linux-x64.tar.gz
-tar -xzf /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz
+tar -xzf /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz -C ./CodemerxDecompile
 rm /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz
 
 echo "Fetching Kerbrute"
