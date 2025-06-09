@@ -82,6 +82,12 @@ rm LICENSE README.md
 tar xfv ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
 rm LICENSE README.md *.tar.gz *.zip
 
+echo "Installing Burpsuite Professional"
+cd /home/user/Downloads/Tools
+curl -L 'https://portswigger.net/burp/releases/download?product=pro&version=2025.4.5&type=Linux' -o burpsuite_pro_2025.4.5.sh
+chmod +x burpsuite_pro_2025.4.5.sh
+sudo ./burpsuite_pro_2025.4.5.sh
+
 echo "Fetching Bloodhound-CE"
 cd /home/user/Downloads/Tools
 wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
