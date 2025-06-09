@@ -21,19 +21,19 @@ BANNER
 echo "Updating all packages"
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
 
-echo "Installing Ufw firewall"
-sudo apt install -y ufw gufw
-sudo systemctl enable ufw
-sudo ufw enable
-sudo ufw allow Office
-sudo ufw default allow outgoing
-sudo ufw default deny incoming
+#echo "Installing Ufw firewall"
+#sudo apt install -y ufw gufw
+#sudo systemctl enable ufw
+#sudo ufw enable
+#sudo ufw allow Office
+#sudo ufw default allow outgoing
+#sudo ufw default deny incoming
 
-echo "Istalling Spice agent"
-sudo apt install -y spice-vdagent
-sudo apt install -y qemu-guest-agent
-sudo systemctl start spice-vdagent
-sudo systemctl enable spice-vdagent
+#echo "Istalling Spice agent"
+#sudo apt install -y spice-vdagent
+#sudo apt install -y qemu-guest-agent
+#sudo systemctl start spice-vdagent
+#sudo systemctl enable spice-vdagent
 
 echo "Installing Kali most used toolsets"
 #Missing Bluetooth, WIFI, SDR etc. because not in use
