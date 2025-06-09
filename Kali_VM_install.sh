@@ -80,7 +80,7 @@ rm LICENSE README.md
 tar xfv ligolo-ng_agent_0.8.2_linux_amd64.tar.gz
 rm LICENSE README.md
 tar xfv ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
-rm LICENSE README.md ligolo-ng_agent_0.8.2_linux_amd64.tar.gz ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
+rm LICENSE README.md *.tar.gz *.zip
 
 echo "Fetching Bloodhound-CE"
 cd /home/user/Downloads/Tools
