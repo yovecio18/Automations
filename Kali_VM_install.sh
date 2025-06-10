@@ -89,10 +89,14 @@ chmod +x burpsuite_pro_2025.4.5.sh
 sudo ./burpsuite_pro_2025.4.5.sh
 
 echo "Fetching Bloodhound-CE"
-cd /home/user/Downloads/Tools
+mkdir  /home/user/Downloads/Tools/LigoloNG
+cd /home/user/Downloads/Tools/LigoloNG
 wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
 tar -xvzf bloodhound-cli-linux-amd64.tar.gz
 rm bloodhound-cli-linux-amd64.tar.gz
+wget https://github.com/SpecterOps/SharpHound/releases/download/v2.6.7/SharpHound_v2.6.7_windows_x86.zip
+unzip SharpHound_v2.6.7_windows_x86.zip
+rm SharpHound.exe.config SharpHound.pdb
 
 echo "Installing extra tools"
 sudo apt install -y bloodyad
