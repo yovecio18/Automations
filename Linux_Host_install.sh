@@ -78,5 +78,5 @@ sudo apt install -y yubikey-personalization yubikey-luks
 echo "Installing Ubuntu's Nvidia and Hashcat"
 sudo apt install -y ubuntu-drivers-common nvidia-cuda-toolkit hashcat
 sudo ubuntu-drivers install
-echo "Signing Nvidia drivers via MOK"
-sudo mokutil --import /var/lib/dkms/mok.pub 
+#echo "Signing Nvidia drivers via MOK"
+#sudo mokutil --import /var/lib/dkms/mok.pub 
