@@ -129,3 +129,14 @@ git clone https://github.com/pwntester/ysoserial.net
 git clone https://github.com/Flangvik/SharpCollection
 git clone https://github.com/dirkjanm/adidnsdump
 git clone https://github.com/insidetrust/statistically-likely-usernames
+git clone https://github.com/lkarlslund/Adalanche/releases/download/v2025.2.6/adalanche-linux-x64-v2025.2.6
+git clone https://github.com/micahvandeusen/gMSADumper.git
+git clone https://github.com/X-C3LL/GPOwned.git
+git clone https://github.com/topotam/PetitPotam.git
+git clone https://github.com/MWR-CyberSec/PXEThief.git
+git clone https://github.com/csandker/pxethiefy
+git clone https://github.com/tothi/rbcd-attack.git
+git clone https://github.com/RedTeamPentesting/wspcoerce.git
+
+
+
