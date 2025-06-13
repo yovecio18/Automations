@@ -44,7 +44,7 @@ sudo ufw default deny incoming
 echo "Installing Gparted"
 sudo apt install -y gparted
 echo "Installing Gnome tweaks"
-sudo apt install -y gnome-tweaks
+sudo apt install -y gnome-tweaks dconf-editor
 #echo "Istalling Spice agent"
 #sudo apt install -y spice-vdagent
 #sudo systemctl start spice-vdagent
