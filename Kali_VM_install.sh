@@ -98,6 +98,18 @@ wget https://github.com/SpecterOps/SharpHound/releases/download/v2.6.7/SharpHoun
 unzip SharpHound_v2.6.7_windows_x86.zip
 rm SharpHound.exe.config SharpHound.pdb
 
+echo "Installing Tilix + theming"
+sudo apt install -y tilix
+cd /opt
+sudo wget https://github.com/dracula/tilix/archive/master.zip
+sudo unzip -o master.zip && rm master.zip
+mkdir /home/user/.config/tilix
+mkdir /home/user/.config/tilix/schemes
+cp tilix-master/Dracula.json /home/user/.config/tilix/schemes
+sudo rm -rf 
+sudo rm -rf tilix-master
+
+
 echo "Installing extra tools"
 sudo apt install -y bloodyad
 sudo apt install -y enum4linux-ng
