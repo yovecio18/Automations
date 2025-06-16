@@ -105,6 +105,7 @@ sudo apt install -y certipy-ad
 sudo apt install -y coercer
 sudo apt install -y obsidian
 sudo apt install -y bloodhound
+sudo apt install -y bloodhound-ce-python
 sudo apt install -y gir1.2-libmsi-1.0 libmsi-1.0-0 libmsi-dev msitools wixl wixl-data
 sudo apt install -y krb5-user
 
