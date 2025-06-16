@@ -61,7 +61,7 @@ sudo apt install -y gnome-tweaks dconf-editor
 #sudo virsh net-autostart default
 #sudo virsh net-start default
 
-echo "Installing terminal theming"
+echo "Installing Gnome terminal theming"
 sudo apt install -y dconf-cli zsh-syntax-highlighting git
 cd /home/user/
 mkdir Installers
@@ -80,5 +80,10 @@ sudo apt install -y yubikey-personalization yubikey-luks
 echo "Installing Ubuntu's Nvidia and Hashcat"
 sudo apt install -y ubuntu-drivers-common nvidia-cuda-toolkit hashcat
 sudo ubuntu-drivers install
-#echo "Signing Nvidia drivers via MOK"
-#sudo mokutil --import /var/lib/dkms/mok.pub 
+
+echo "Signing VMware Worksstation"
+cd /opt
+sudo openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=VMware/"
+sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(/sbin/modinfo -n vmmon)
+sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(/sbin/modinfo -n vmnet)
+sudo mokutil --import MOK.der
