@@ -109,7 +109,6 @@ cp tilix-master/Dracula.json /home/user/.config/tilix/schemes
 sudo rm -rf 
 sudo rm -rf tilix-master
 
-
 echo "Installing extra tools"
 sudo apt install -y bloodyad
 sudo apt install -y enum4linux-ng
@@ -150,13 +149,3 @@ git clone https://github.com/MWR-CyberSec/PXEThief.git
 git clone https://github.com/csandker/pxethiefy
 git clone https://github.com/tothi/rbcd-attack.git
 git clone https://github.com/RedTeamPentesting/wspcoerce.git
-
-echo "Signing VMware Worksstation"
-cd /opt
-sudo openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=VMware/"
-sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(/sbin/modinfo -n vmmon)
-sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(/sbin/modinfo -n vmnet)
-sudo mokutil --import MOK.der
-
-
-
