@@ -106,8 +106,13 @@ sudo unzip -o master.zip && rm master.zip
 mkdir /home/user/.config/tilix
 mkdir /home/user/.config/tilix/schemes
 cp tilix-master/Dracula.json /home/user/.config/tilix/schemes
-sudo rm -rf 
-sudo rm -rf tilix-master
+rm -rf tilix-master
+
+echo "Installing OnlyOffice"
+cd /home/user/Downloads/Tools
+wget https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb
+sudo apt install -y ./onlyoffice-desktopeditors_amd64.deb
+rm -rf ./onlyoffice-desktopeditors_amd64.deb
 
 echo "Installing extra tools"
 sudo apt install -y bloodyad
