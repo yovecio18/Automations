@@ -114,6 +114,13 @@ wget https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyo
 sudo apt install -y ./onlyoffice-desktopeditors_amd64.deb
 rm -rf ./onlyoffice-desktopeditors_amd64.deb
 
+echo "installing RustScan"
+cd /home/user/Downloads/Tools
+wget https://github.com/bee-san/RustScan/releases/download/2.4.1/rustscan.deb.zip
+unzip rustscan.deb.zip
+sudo apt install -y ./rustscan_2.4.1-1_amd64.deb 
+rm rustscan*
+
 echo "Installing extra tools"
 sudo apt install -y bloodyad
 sudo apt install -y enum4linux-ng
