@@ -51,6 +51,7 @@ cargo install cargo-deb
 
 echo "Installing docker"
 sudo apt install -y docker.io
+sudo apt install -y docker-cli
 sudo systemctl enable docker --now
 sudo usermod -aG docker user
 
