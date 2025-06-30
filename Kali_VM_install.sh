@@ -49,6 +49,11 @@ sudo apt install -y rustup
 rustup default stable
 cargo install cargo-deb
 
+echo "Installing docker"
+sudo apt install -y docker.io
+sudo systemctl enable docker --now
+sudo usermod -aG docker user
+
 echo "Fetching Codemerx decompile"
 mkdir /home/user/Downloads/Tools/CodemerxDecompile
 cd /home/user/Downloads/Tools/
