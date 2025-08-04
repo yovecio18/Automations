@@ -81,6 +81,14 @@ echo "Installing Ubuntu's Nvidia and Hashcat"
 sudo apt install -y ubuntu-drivers-common nvidia-cuda-toolkit hashcat
 sudo ubuntu-drivers install
 
+#echo "Disabling systemd-resolved"
+sudo systemctl disable systemd-resolved
+sudo systemctl stop systemd-resolved
+sudo rm /etc/resolv.conf
+sudo ln -s /run/NetworkManager/resolv.conf /etc/resolv.conf
+sudo systemctl restart NetworkManager
+echo -e "nameserver 192.168.101.1\nnameserver 1.1.1.1\noptions edns0 trust-ad" | sudo tee /etc/resolv.conf > /dev/null
+
 echo "Signing VMware Worksstation"
 cd /opt
 sudo openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=VMware/"
