@@ -179,3 +179,8 @@ git clone https://github.com/csandker/pxethiefy
 git clone https://github.com/tothi/rbcd-attack.git
 git clone https://github.com/RedTeamPentesting/wspcoerce.git
 git clone https://github.com/garrettfoster13/sccmhunter.git
+
+
+echo "Pulling existing Tools"
+cd /home/user/Downloads/Tools
+find /home/user/Downloads/Tools -maxdepth 1 -type d -exec sh -c 'cd "$0" && [ -d .git ] && echo "Updating $(basename "$0")" && git pull' {} \;
