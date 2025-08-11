@@ -146,7 +146,9 @@ sudo apt install -y bloodhound-ce-python
 sudo apt install -y gir1.2-libmsi-1.0 libmsi-1.0-0 libmsi-dev msitools wixl wixl-data
 sudo apt install -y krb5-user 
 sudo apt install -y ntpsec-ntpdate
+sudo apt install -y pipenv
 sudo apt install -y network-manager-openvpn-gnome
+
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
@@ -176,3 +178,4 @@ git clone https://github.com/MWR-CyberSec/PXEThief.git
 git clone https://github.com/csandker/pxethiefy
 git clone https://github.com/tothi/rbcd-attack.git
 git clone https://github.com/RedTeamPentesting/wspcoerce.git
+git clone https://github.com/garrettfoster13/sccmhunter.git
