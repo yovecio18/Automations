@@ -61,12 +61,12 @@ wget https://github.com/codemerx/CodemerxDecompile/releases/latest/download/Code
 tar -xzf /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz -C ./CodemerxDecompile
 rm /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz
 
-echo "Fetching Kerbrute"
+echo "Fetching PSPY"
 cd /home/user/Downloads/Tools
 wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.1/pspy64
 chmod +x ./pspy64
 
-echo "Fetching Pspy"
+echo "Fetching Kerbrute"
 cd /home/user/Downloads/Tools
 wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
 chmod +x ./kerbrute_linux_amd64
@@ -89,9 +89,10 @@ rm LICENSE README.md *.tar.gz *.zip
 
 echo "Installing Burpsuite Professional"
 cd /home/user/Downloads/Tools
-curl -L 'https://portswigger.net/burp/releases/download?product=pro&version=2025.4.5&type=Linux' -o burpsuite_pro_2025.4.5.sh
-chmod +x burpsuite_pro_2025.4.5.sh
-sudo ./burpsuite_pro_2025.4.5.sh
+rm burpsuite_pro*
+curl -L 'https://portswigger.net/burp/releases/download?product=pro&version=2025.8&type=Linux' -o burpsuite_pro_2025.8.sh
+chmod +x burpsuite_pro_2025.8.sh
+sudo ./burpsuite_pro_2025.8.sh
 
 echo "Fetching Bloodhound-CE"
 mkdir  /home/user/Downloads/Tools/LigoloNG
@@ -102,6 +103,14 @@ rm bloodhound-cli-linux-amd64.tar.gz
 wget https://github.com/SpecterOps/SharpHound/releases/download/v2.6.7/SharpHound_v2.6.7_windows_x86.zip
 unzip SharpHound_v2.6.7_windows_x86.zip
 rm SharpHound.exe.config SharpHound.pdb
+
+echo "Fetching Adalanche"
+mkdir /home/user/Downloads/Tools/Adalanche
+cd /home/user/Downloads/Tools/Adalanche
+wget https://github.com/lkarlslund/Adalanche/releases/download/v2025.2.6/adalanche-collector-windows-x64-v2025.2.6.exe
+wget https://github.com/lkarlslund/Adalanche/releases/download/v2025.2.6/adalanche-linux-x64-v2025.2.6
+wget https://github.com/lkarlslund/Adalanche/releases/download/v2025.2.6/adalanche-windows-x64-v2025.2.6.exe
+chmod +x adalanche-linux-x64-v2025.2.6
 
 echo "Installing Tilix + theming"
 sudo apt install -y tilix
@@ -119,7 +128,7 @@ wget https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyo
 sudo apt install -y ./onlyoffice-desktopeditors_amd64.deb
 rm -rf ./onlyoffice-desktopeditors_amd64.deb
 
-echo "installing RustScan"
+echo "Installing RustScan"
 cd /home/user/Downloads/Tools
 wget https://github.com/bee-san/RustScan/releases/download/2.4.1/rustscan.deb.zip
 unzip rustscan.deb.zip
@@ -160,7 +169,6 @@ git clone https://github.com/pwntester/ysoserial.net
 git clone https://github.com/Flangvik/SharpCollection
 git clone https://github.com/dirkjanm/adidnsdump
 git clone https://github.com/insidetrust/statistically-likely-usernames
-git clone https://github.com/lkarlslund/Adalanche/releases/download/v2025.2.6/adalanche-linux-x64-v2025.2.6
 git clone https://github.com/micahvandeusen/gMSADumper.git
 git clone https://github.com/X-C3LL/GPOwned.git
 git clone https://github.com/topotam/PetitPotam.git
