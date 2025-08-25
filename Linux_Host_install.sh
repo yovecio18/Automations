@@ -82,8 +82,8 @@ sudo apt install -y ubuntu-drivers-common nvidia-cuda-toolkit hashcat
 sudo ubuntu-drivers install
 
 #echo "Disabling systemd-resolved"
-sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-sudo echo -e "nameserver 192.168.101.1\nnameserver 1.1.1.1\noptions edns0 trust-ad" | sudo tee /etc/resolv.conf > /dev/null
+sudo sed -i -E 's/^DNS=.*/DNS=192.168.101.1/; s/^FallbackDNS=.*/FallbackDNS=1.1.1.1/; s/^Domains=.*/Domains=~./' /etc/systemd/resolved.conf
+sudo systemctl restart systemd-resolved
 
 echo "Signing VMware Worksstation"
 cd /opt
