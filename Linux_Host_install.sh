@@ -87,7 +87,7 @@ sudo systemctl stop systemd-resolved
 sudo rm /etc/resolv.conf
 sudo ln -s /run/NetworkManager/resolv.conf /etc/resolv.conf
 sudo systemctl restart NetworkManager
-echo -e "nameserver 192.168.101.1\nnameserver 1.1.1.1\noptions edns0 trust-ad" | sudo tee /etc/resolv.conf > /dev/null
+sudo echo -e "nameserver 192.168.101.1\nnameserver 1.1.1.1\noptions edns0 trust-ad" | sudo tee /etc/resolv.conf > /dev/null
 
 echo "Signing VMware Worksstation"
 cd /opt
