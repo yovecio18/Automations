@@ -81,8 +81,8 @@ chmod +x burpsuite_pro_2025.8.sh
 sudo ./burpsuite_pro_2025.8.sh
 
 echo "Fetching Bloodhound-CE"
-mkdir  /home/user/Downloads/Tools/LigoloNG
-cd /home/user/Downloads/Tools/LigoloNG
+mkdir  /home/user/Downloads/Tools/BloodhoundCE
+cd /home/user/Downloads/Tools/BloodhoundCE
 wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
 tar -xvzf bloodhound-cli-linux-amd64.tar.gz
 rm bloodhound-cli-linux-amd64.tar.gz
