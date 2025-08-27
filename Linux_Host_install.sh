@@ -86,6 +86,7 @@ sudo sed -i -E 's/^DNS=.*/DNS=192.168.101.1/; s/^FallbackDNS=.*/FallbackDNS=1.1.
 sudo systemctl restart systemd-resolved
 
 echo "Signing VMware Worksstation"
+#sudo vmware-modconfig --console --install-all --appname="VMware Player" --icon="vmware-player"
 cd /opt
 sudo openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=VMware/"
 sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(/sbin/modinfo -n vmmon)
