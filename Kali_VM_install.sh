@@ -57,6 +57,20 @@ cd /home/user/Downloads/Tools
 wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
 chmod +x ./kerbrute_linux_amd64
 
+echo "Fetching RunAsCS"
+mkdir /home/user/Downloads/Tools/RunAsCS
+cd /home/user/Downloads/Tools/RunAsCS
+wget https://github.com/antonioCoco/RunasCs/releases/download/v1.5/RunasCs.zip
+unzip RunasCs.zip
+rm RunasCs.zip
+
+echo "Fetching Potatoes"
+mkdir /home/user/Downloads/Tools/Potatoes
+cd /home/user/Downloads/Tools/Potatoes
+wget https://github.com/lypd0/DeadPotato/releases/download/v1.2/DeadPotato-NET4.exe
+wget https://github.com/tylerdotrar/SigmaPotato/releases/download/v1.2.6/SigmaPotato.exe
+
+
 echo "Fetching Ligolo-ng"
 mkdir  /home/user/Downloads/Tools/LigoloNG
 cd /home/user/Downloads/Tools/LigoloNG
@@ -138,6 +152,7 @@ sudo apt install -y network-manager-openvpn-gnome
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
+git clone https://github.com/Hackndo/pyGPOAbuse.git
 git clone https://github.com/unode/firefox_decrypt.git
 git clone https://github.com/bee-san/RustScan 
 git clone https://github.com/g0h4n/RustHound-CE 
