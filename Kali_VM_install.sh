@@ -70,6 +70,12 @@ cd /home/user/Downloads/Tools/Potatoes
 wget https://github.com/lypd0/DeadPotato/releases/download/v1.2/DeadPotato-NET4.exe
 wget https://github.com/tylerdotrar/SigmaPotato/releases/download/v1.2.6/SigmaPotato.exe
 
+echo "Fetching Peas"
+mkdir /home/user/Downloads/Tools/Peas
+cd /home/user/Downloads/Tools/Peas
+wget https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEAS.bat
+wget https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/linpeas.sh
+wget https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEASx64_ofs.exe
 
 echo "Fetching Ligolo-ng"
 mkdir  /home/user/Downloads/Tools/LigoloNG
