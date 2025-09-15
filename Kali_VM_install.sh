@@ -158,7 +158,7 @@ sudo apt install -y network-manager-openvpn-gnome
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
-git clone https://github.com/juliourena/plaintext/blob/master/Powershell/Get-GPOEnumeration.ps1
+wget https://raw.githubusercontent.com/juliourena/plaintext/refs/heads/master/Powershell/Get-GPOEnumeration.ps1
 git clone https://github.com/Hackndo/pyGPOAbuse.git
 git clone https://github.com/unode/firefox_decrypt.git
 git clone https://github.com/bee-san/RustScan 
