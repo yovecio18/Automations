@@ -155,7 +155,6 @@ sudo apt install -y ntpsec-ntpdate
 sudo apt install -y pipenv
 sudo apt install -y network-manager-openvpn-gnome
 
-
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
 wget https://raw.githubusercontent.com/juliourena/plaintext/refs/heads/master/Powershell/Get-GPOEnumeration.ps1
