@@ -47,6 +47,13 @@ wget https://github.com/codemerx/CodemerxDecompile/releases/latest/download/Code
 tar -xzf /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz -C ./CodemerxDecompile
 rm /home/user/Downloads/Tools/CodemerxDecompile-linux-x64.tar.gz
 
+echo "Fetching Apache Directory Studio"
+mkdir /home/user/Downloads/Tools/ApacheDirectoryStudio
+cd /home/user/Downloads/Tools/
+wget https://dlcdn.apache.org/directory/studio/2.0.0.v20210717-M17/ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+tar -xzf /home/user/Downloads/Tools/ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz -C ./ApacheDirectoryStudio
+rm /home/user/Downloads/Tools/ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+
 echo "Fetching PSPY"
 cd /home/user/Downloads/Tools
 wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.1/pspy64
@@ -128,13 +135,13 @@ mkdir /home/user/.config/tilix/schemes
 cp tilix-master/Dracula.json /home/user/.config/tilix/schemes
 rm -rf tilix-master
 
-echo "Installing OnlyOffice"
+echo "Fetching OnlyOffice"
 cd /home/user/Downloads/Tools
 wget https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb
 sudo apt install -y ./onlyoffice-desktopeditors_amd64.deb
 rm -rf ./onlyoffice-desktopeditors_amd64.deb
 
-echo "Installing RustScan"
+echo "Fetching RustScan"
 cd /home/user/Downloads/Tools
 wget https://github.com/bee-san/RustScan/releases/download/2.4.1/rustscan.deb.zip
 unzip rustscan.deb.zip
@@ -154,10 +161,17 @@ sudo apt install -y krb5-user
 sudo apt install -y ntpsec-ntpdate
 sudo apt install -y pipenv
 sudo apt install -y network-manager-openvpn-gnome
+sudo apt install -y dirsearch
+sudo apt install -y remmina
+sudo apt install -y dbeaver
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
 wget https://raw.githubusercontent.com/juliourena/plaintext/refs/heads/master/Powershell/Get-GPOEnumeration.ps1
+wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SharpWSUS.exe
+wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SpoolSample.exe
+git clone https://github.com/Syzik/DockerRegistryGrabber.git
+git clone https://github.com/arthaud/git-dumper.git
 git clone https://github.com/Hackndo/pyGPOAbuse.git
 git clone https://github.com/unode/firefox_decrypt.git
 git clone https://github.com/bee-san/RustScan 
@@ -186,7 +200,6 @@ git clone https://github.com/csandker/pxethiefy
 git clone https://github.com/tothi/rbcd-attack.git
 git clone https://github.com/RedTeamPentesting/wspcoerce.git
 git clone https://github.com/garrettfoster13/sccmhunter.git
-
 
 echo "Pulling existing Tools"
 cd /home/user/Downloads/Tools
