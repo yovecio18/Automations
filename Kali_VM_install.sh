@@ -1,9 +1,8 @@
 #!/bin/bash
 #Kali Guest VM bash script.
 #Install and clones the most used tools for work.
-#2025-05-22 
-#v.1.0
-<<BANNER
+#2025-09-26
+cat << "BANNER"
     __ __      ___    ______                __ 
    / //_/___ _/ (_)  / ____/_  _____  _____/ /_
   / ,< / __ `/ / /  / / __/ / / / _ \/ ___/ __/
@@ -17,6 +16,7 @@
 /___/_/ /_/____/\__/\__,_/_/_/\___/_/     
 
 BANNER
+
 
 echo "Updating all packages"
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
@@ -110,12 +110,13 @@ sudo ./burpsuite_pro_2025.8.sh
 echo "Fetching Bloodhound-CE"
 mkdir  /home/user/Downloads/Tools/BloodhoundCE
 cd /home/user/Downloads/Tools/BloodhoundCE
-wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
-tar -xvzf bloodhound-cli-linux-amd64.tar.gz
-rm bloodhound-cli-linux-amd64.tar.gz
 wget https://github.com/SpecterOps/SharpHound/releases/download/v2.6.7/SharpHound_v2.6.7_windows_x86.zip
 unzip SharpHound_v2.6.7_windows_x86.zip
 rm SharpHound.exe.config SharpHound.pdb
+wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/bloodhound-cli-linux-amd64.tar.gz
+tar -xvzf bloodhound-cli-linux-amd64.tar.gz
+rm bloodhound-cli-linux-amd64.tar.gz
+./bloodhound-cli install
 
 echo "Fetching Adalanche"
 mkdir /home/user/Downloads/Tools/Adalanche
