@@ -169,7 +169,7 @@ sudo apt install -y dbeaver
 
 echo "Cloning some extra repositories"
 cd /home/user/Downloads/Tools
-wget https://github.com/yovecio18/Automations/blob/main/Certify.exe
+wget https://github.com/yovecio18/Automations/raw/refs/heads/main/Certify.exe
 wget https://raw.githubusercontent.com/juliourena/plaintext/refs/heads/master/Powershell/Get-GPOEnumeration.ps1
 wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SharpWSUS.exe
 wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SpoolSample.exe
