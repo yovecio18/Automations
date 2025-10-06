@@ -202,6 +202,7 @@ git clone https://github.com/csandker/pxethiefy
 git clone https://github.com/tothi/rbcd-attack.git
 git clone https://github.com/RedTeamPentesting/wspcoerce.git
 git clone https://github.com/garrettfoster13/sccmhunter.git
+git clone https://github.com/dirkjanm/adidnsdump.git
 
 echo "Pulling existing Tools"
 cd /home/user/Downloads/Tools
