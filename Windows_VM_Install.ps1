@@ -18,7 +18,7 @@ Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 
 echo "Fetching & executing debloater tool"
 cd C:\Exclusion\Tools
-wget https://github.com/Raphire/Win11Debloat/releases/download/2025.05.26/Get.ps1 -outfile Get.ps1
+wget https://github.com/Raphire/Win11Debloat/releases/download/2025.09.28/Get.ps1 -outfile Get.ps1
 Set-ExecutionPolicy Bypass -Force
 powershell.exe ./Get.ps1
 Set-ExecutionPolicy Restricted -Force
