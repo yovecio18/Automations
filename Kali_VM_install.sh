@@ -117,6 +117,7 @@ wget https://github.com/SpecterOps/bloodhound-cli/releases/latest/download/blood
 tar -xvzf bloodhound-cli-linux-amd64.tar.gz
 rm bloodhound-cli-linux-amd64.tar.gz
 ./bloodhound-cli install
+sudo runuser -u postgres -- psql -c 'ALTER DATABASE postgres REFRESH COLLATION VERSION; ALTER DATABASE template1 REFRESH COLLATION VERSION;'
 
 echo "Fetching Adalanche"
 mkdir /home/user/Downloads/Tools/Adalanche
