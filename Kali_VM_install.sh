@@ -80,9 +80,9 @@ wget https://github.com/tylerdotrar/SigmaPotato/releases/download/v1.2.6/SigmaPo
 echo "Fetching Peas"
 mkdir /home/user/Downloads/Tools/Peas
 cd /home/user/Downloads/Tools/Peas
-wget https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEAS.bat
-wget https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/linpeas.sh
-wget https://github.com/peass-ng/PEASS-ng/releases/download/20250904-27f4363e/winPEASx64_ofs.exe
+wget https://github.com/peass-ng/PEASS-ng/releases/download/20251004-ba856a2a/winPEAS.bat
+wget https://github.com/peass-ng/PEASS-ng/releases/download/20251004-ba856a2a/linpeas.sh
+wget https://github.com/peass-ng/PEASS-ng/releases/download/20251004-ba856a2a/winPEASx64_ofs.exe
 
 echo "Fetching Ligolo-ng"
 mkdir  /home/user/Downloads/Tools/LigoloNG
