@@ -40,6 +40,13 @@ sudo apt install -y docker.io docker-compose docker-cli
 sudo systemctl enable docker --now
 sudo usermod -aG docker user
 
+echo "Installing latest Netexec"
+git clone https://github.com/Pennyw0rth/NetExec.git
+sudo apt install pipx git
+pipx ensurepath
+pipx install git+https://github.com/Pennyw0rth/NetExec
+sudo apt remove -y netexec
+
 echo "Fetching Codemerx decompile"
 mkdir /home/user/Downloads/Tools/CodemerxDecompile
 cd /home/user/Downloads/Tools/
@@ -174,7 +181,6 @@ wget https://github.com/yovecio18/Automations/raw/refs/heads/main/Certify.exe
 wget https://raw.githubusercontent.com/juliourena/plaintext/refs/heads/master/Powershell/Get-GPOEnumeration.ps1
 wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SharpWSUS.exe
 wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SpoolSample.exe
-git clone https://github.com/Pennyw0rth/NetExec.git
 git clone https://github.com/Syzik/DockerRegistryGrabber.git
 git clone https://github.com/arthaud/git-dumper.git
 git clone https://github.com/Hackndo/pyGPOAbuse.git
