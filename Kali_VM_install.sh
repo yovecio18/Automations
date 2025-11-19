@@ -181,6 +181,7 @@ wget https://github.com/yovecio18/Automations/raw/refs/heads/main/Certify.exe
 wget https://raw.githubusercontent.com/juliourena/plaintext/refs/heads/master/Powershell/Get-GPOEnumeration.ps1
 wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SharpWSUS.exe
 wget https://github.com/yovecio18/Automations/raw/refs/heads/main/SpoolSample.exe
+git clone https://github.com/p0dalirius/pyLAPS.git
 git clone https://github.com/Syzik/DockerRegistryGrabber.git
 git clone https://github.com/arthaud/git-dumper.git
 git clone https://github.com/Hackndo/pyGPOAbuse.git
